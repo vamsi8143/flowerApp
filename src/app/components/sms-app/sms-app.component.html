@@ -1,0 +1,27 @@
+<section class="mt-3 mb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 shadow-lg">
+        <div class="card-header bg-secondary">
+          <h3>Sms App</h3>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <textarea
+              name="message"
+              [(ngModel)]="message"
+              maxlength="200"
+              cols="60"
+              rows="5"
+            ></textarea>
+          </form>
+          <p class="h3">the characters remaining:{{ message.length }}/200</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <app-show-password></app-show-password>
+      </div>
+    </div>
+  </div>
+</section>
+<app-thems></app-thems>

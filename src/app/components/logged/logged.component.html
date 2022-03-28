@@ -1,0 +1,29 @@
+<section class="mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col shadow-lg">
+        <div class="card-header bg-dark text-white">
+          <h3>Check Logging Functions</h3>
+        </div>
+        <div class="card-body">
+          <h2 *ngIf="!isLogg">Welcome to login page!</h2>
+          <h2 *ngIf="isLogg">ThankYou!</h2>
+          <input
+            (click)="logIn()"
+            *ngIf="!isLogg"
+            type="submit"
+            value="login"
+            class="btn btn-success btn-sm"
+          />
+          <input
+            (click)="logOut()"
+            *ngIf="isLogg"
+            type="submit"
+            value="logout"
+            class="btn btn-danger btn-sm"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

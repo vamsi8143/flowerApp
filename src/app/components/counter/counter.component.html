@@ -1,0 +1,14 @@
+<div class="col-md-12">
+  <div class="card card-header bg-dark text-white">
+    <p class="3">Counter</p>
+  </div>
+  <div class="card card-body">
+    <p class="h3">Count: {{ count }}</p>
+    <button (click)="counterFun(1)" class="btn btn-success" type="button">
+      Increment
+    </button>
+    <button (click)="counterFun(-1)" class="btn btn-danger" type="button">
+      Decrement
+    </button>
+  </div>
+</div>
